@@ -165,7 +165,7 @@ bot.on('message', async (ctx) => {
     const tt = ig ? null : urls.find(isTikTokUrl);
 
     if (!ig && !tt) {
-      return ctx.reply(`Ты написал: ${ctx.message?.text || 'что-то другое 😅'}`);
+      return;
     }
 
     const targetUrl = ig ? normalizeReelUrl(ig) : normalizeTikTokUrl(tt);
