@@ -193,7 +193,6 @@ bot.on('message', async (ctx) => {
         undefined,
         'Готово ✅'
       );
-      await ctx.deleteMessage(ctx.message.message_id);
     } catch {}
   } catch (err) {
     console.error('Download/send error:', err);
